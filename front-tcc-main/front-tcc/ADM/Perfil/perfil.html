@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Perfil/css/style.css">
+    <title>Meu Perfil</title>
+</head>
+<body class="body" onload="Solicitacao()">
+    <aside class="aside h-100">
+    </aside>
+    
+    <main class="main container-fluid h-100">
+        <header class="header d-flex justify-content-between align-items-center">
+            <div class="titulo">
+                <h1>Perfil</h1>
+            </div>
+
+            <div class="perfil align-items-right">
+                <img src="assets/perfil-icon.svg" alt="" srcset="">
+            </div>
+        </header>
+
+        <section class="section d-flex align-items-left">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h2>Dados Pessoais</h2>
+                    <img src="assets/perfil-icon.svg" alt="">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <label for="formGroupExampleInput2" class="form-label">Usuário:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2">
+                        <label for="formGroupExampleInput" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput">
+                        <label for="formGroupExampleInput2" class="form-label">Contato:</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2"><br>
+                        <h6 style="color: red;">***</h6><h6>Observação: Sempre mantenha os dados para contato
+                          atualizados.</h6>
+                      </div>
+                      <div class="col d-flex justify-content-around align-items-center">
+                      <button type="button" class="edit"><b>Editar</b></button>
+                      <button type="button" class="save"><b>Salvar</b></button>
+                      </div>
+                  </div>
+                  <div class="col">
+                  <div class="vl"></div>
+                  </div>
+                  <div class="col">
+                    <h2 style="text-align: left;">Pendências</h2>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+    </main>
+</body>
+</html>
