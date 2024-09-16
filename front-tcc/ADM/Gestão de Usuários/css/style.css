@@ -33,9 +33,15 @@
 }
 
 .header__toggle{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     color: var(--second-color);
 } 
+
+.header__toggle:hover{
+    cursor: pointer;
+}
 
 .nav {
     position: fixed;
@@ -143,7 +149,7 @@ img {
 }
 
 @media screen and (max-width: 320px) {
-    
+
 }
 
 @media screen and (min-width: 768px){
@@ -157,6 +163,10 @@ img {
 
     .header__toggle{
         display: none;
+    }
+
+    .perfil {
+        width: 10rem;
     }
 
     .nav{
@@ -180,4 +190,5 @@ img {
     .nav:hover{
         width: 219px;
     }
+
 }
