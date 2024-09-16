@@ -1,3 +1,0 @@
-function FLoginADM(){
-    var louca;
-}
