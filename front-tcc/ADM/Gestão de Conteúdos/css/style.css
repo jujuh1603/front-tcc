@@ -201,14 +201,24 @@ img {
     color: var(--third-color);
 }
 
-.solicitar{
+.adicionar{
     background-color: #B6BB9B;
     font-weight: 600;
 }
 
-.solicitar:hover{
+.adicionar:hover{
     background-color: #9bbba2;
 }
+
+.excluir{
+    background-color: #BD9090;
+    font-weight: 600;
+}
+
+.excluir:hover{
+    background-color: #bc7676;
+}
+
 
 .section{
     margin-top: 2rem;
