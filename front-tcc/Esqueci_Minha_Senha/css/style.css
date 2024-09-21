@@ -18,11 +18,23 @@
     box-shadow: 5px 4px 14px 0px rgba(0,0,0,0.43);
 }
 
-.img__etapa{
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.process__name{
     padding-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1{
+    font-weight: 800;
 }
 
 label {
