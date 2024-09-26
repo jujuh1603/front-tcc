@@ -119,7 +119,7 @@ background: linear-gradient(0deg, #FFD1DC 0%, rgba(242,242,242,1) 5%, rgba(242,2
 }
 
 
-.line ul li .circle{
+.line ul li span{
     content: " ";
     width: 50px;
     height: 50px;
@@ -140,10 +140,7 @@ background: linear-gradient(0deg, #FFD1DC 0%, rgba(242,242,242,1) 5%, rgba(242,2
 #cor2,
 #cor3,
 #cor4,
-#cor5,
-#cor6,
-#cor7,
-#cor8 {
+#cor5 {
     color: #878786;
 }
 
@@ -170,5 +167,40 @@ footer h6{
         left: auto;
         right: 0;
     }
+}
 
+@media  (min-width: 700px) {
+    .circle5{
+        margin-top: 57%;
+    }
+    .circle4{
+        margin-top: 45%;
+    }
+    .circle3{
+        margin-top: 31%;
+    }
+    .circle2{
+        margin-top: 17.5%;
+    }
+    .circle1{
+        margin-top: 3.5%;
+    }
+}
+
+@media  (max-width: 600px) {
+    .circle5{
+        margin-top: 83%;
+    }
+    .circle4{
+        margin-top: 65%;
+    }
+    .circle3{
+        margin-top: 44%;
+    }
+    .circle2{
+        margin-top: 22%;
+    }
+    .circle1{
+        margin-top: 2%;
+    }
 }
