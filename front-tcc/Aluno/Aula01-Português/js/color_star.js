@@ -1,10 +1,23 @@
-const cores = ["#fafc" , "#878786"];
-document.getElementById("btn") = true;
+const stars = document.querySelectorAll('.star-rating .bi');
+const ratingValueDisplay = document.getElementById('rating-value');
+let rating = 0;
 
-trocaCor.addEventListener('click', () => {
-    cor1.style.color = cores [1];
-    btn = !btn;
+stars.forEach(star => {
+    star.addEventListener('click', () => {
+        rating = star.getAttribute('data-value');
+        highlightStars(rating);
+        ratingValueDisplay.textContent = `Você avaliou este material com ${rating} estrela(s)`;
+    });
+});
 
-    if(btn) cor1.style.color = cores[0];
-    else cor1.style.color = cores[1];
-})
+function highlightStars(rating) {
+    stars.forEach(star => {
+        if (star.getAttribute('data-value') <= rating) {
+            star.classList.add('bi-star-fill');
+            star.classList.remove('bi-star');
+        } else {
+            star.classList.add('bi-star');
+            star.classList.remove('bi-star-fill');
+        }
+    });
+}
