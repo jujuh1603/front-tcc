@@ -10,6 +10,7 @@
 
 body {
     font-family: "League Spartan", sans-serif;
+    background-color: #f2f2f2;
 }
 
 .menu-dropdown{
@@ -84,10 +85,6 @@ h1 {
     position: relative;
 }
 
-.card-tittle img {
-    border-radius: 20px 20px 20px 20px; 
-}
-
 .boneco {
     position: absolute;
     top: 50%;
@@ -100,13 +97,23 @@ h1 {
     width: 95%;
 }
 
-.card {
-    padding: 20px;
-    text-align: center;
-}
-
 section {
     background-color: #F6E1E1;
+}
+
+@media screen and (max-width: 600px){
+    .card .card-body h5 {
+        font-size: large;
+        font-weight: 500;
+    }
+    .cards h1{
+        font-size: large;
+        padding-top: 18%;
+    }
+    .forms form label {
+        padding: 2%;
+        border-radius: 10px;
+    }
 }
 
 .materias {
@@ -141,6 +148,67 @@ section {
 
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+.forms {
+    background-color: white;
+    padding: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms form{
+    padding: 10%;
+    padding-top: -50%;
+}
+
+.forms form label {
+    font-weight: 600;
+    font-size: x-large;
+    font-family: 'League Spartan';
+    background-color: #F9A5A5;
+    padding: 0.5%;
+    border-radius: 10px;
+}
+
+.forms form input {
+    border: #252525 solid 2px;
+}
+
+.forms .inputs {
+    background-color: #F0CDCD;
+    height: 20%;
+    width: 70%;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    box-shadow: #a8a8a8 0.5rem 0.5rem 1rem;
+}
+
+.forms .inputs button {
+    background-color: #F9A5A5;
+    color: #252525;
+    border: #252525 solid 3px;
+    font-weight: 700;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: larger;
+}
+
+.forms .inputs button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #252525;
+    transform: scale(1.1);
+    align-items: center;
+}
+
+.forms .botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
 }
 
 footer {
