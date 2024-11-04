@@ -350,13 +350,11 @@ section {
     padding-top: 5%;
 }
 
-.imagem-div {
-    background-image: url(assets/sucess);
-}
-
-.show {
-    display: block;
-}
+.brayan-section {
+    width: 50%; /* ou o tamanho que você deseja */
+    height: 50%;
+    background-image: url(../assets/background.svg);
+  }
 
 footer {
     padding: 2rem;
