@@ -138,6 +138,17 @@ section {
     justify-content: space-evenly;
     align-items: center;
     background-color: #F6E1E1;
+    padding: 2%;
+}
+
+
+.card-body img {
+    width: 30%;
+    height: auto;
+}
+
+.card-body h5 {
+    padding-left: 3%;
 }
 
 .card {
@@ -351,10 +362,16 @@ section {
 }
 
 .brayan-section {
-    width: 50%; /* ou o tamanho que você deseja */
-    height: 50%;
-    background-image: url(../assets/background.svg);
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from 0deg, #ffd1d1 0deg, #ffffff 15deg, #ffd1d1 30deg, #ffffff 45deg, #ffd1d1 60deg, #ffffff 75deg, #ffd1d1 90deg, #ffffff 105deg, #ffd1d1 120deg, #ffffff 135deg, #ffd1d1 150deg, #ffffff 165deg, #ffd1d1 180deg, #ffffff 195deg, #ffd1d1 210deg, #ffffff 225deg, #ffd1d1 240deg, #ffffff 255deg, #ffd1d1 270deg, #ffffff 285deg, #ffd1d1 300deg, #ffffff 315deg, #ffd1d1 330deg, #ffffff 345deg, #ffd1d1 360deg);
+    background-size: cover;
+    text-align: center;
   }
+
+.brayan-section img {
+    width: 20%;
+}
 
 footer {
     padding: 2rem;
