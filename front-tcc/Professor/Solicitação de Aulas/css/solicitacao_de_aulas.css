@@ -144,9 +144,20 @@ section {
 
 .card-body {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin: 2%;
 }
+
+.card-body img {
+    width: 30%;
+    height: auto;
+}
+
+.card-body h5 {
+    padding-left: 3%;
+}
+
 
 .card {
     text-align: center;
