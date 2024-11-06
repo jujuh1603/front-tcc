@@ -95,6 +95,7 @@ section {
     .cards {
         font-size: large;
         padding-top: 50%;
+        padding: 4.5% !important;
     }
     .forms form label {
         padding: 2%;
@@ -105,6 +106,56 @@ section {
     }
     .cards h1 {
         font-size: larger;
+    }
+    .brayan-section {
+        width: 100%;
+        height: 100%;
+        background: conic-gradient(from 0deg, #ffd1d1 0deg, #ffffff 15deg, #ffd1d1 30deg, #ffffff 45deg, #ffd1d1 60deg, #ffffff 75deg, #ffd1d1 90deg, #ffffff 105deg, #ffd1d1 120deg, #ffffff 135deg, #ffd1d1 150deg, #ffffff 165deg, #ffd1d1 180deg, #ffffff 195deg, #ffd1d1 210deg, #ffffff 225deg, #ffd1d1 240deg, #ffffff 255deg, #ffd1d1 270deg, #ffffff 285deg, #ffd1d1 300deg, #ffffff 315deg, #ffd1d1 330deg, #ffffff 345deg, #ffd1d1 360deg);
+        background-size: cover;
+        text-align: center;
+        padding-bottom: 10%;
+      }
+    
+    .brayan-section svg {
+        display: block;
+        margin-bottom: -40px;
+        width: 100%;
+    }
+    
+    .brayan-section h1{
+        color: #C3113E;
+        text-align: center;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 600;
+        padding-top: 20%;
+    }
+    
+    .brayan-section img {
+        width: 60% !important;
+        padding-top: 13% !important;
+    }
+    
+    .brayan-section h6 {
+        color: #5a5959;
+        font-size: medium !important;
+        font-weight: 500;
+        padding-top: 13% !important;
+        padding-bottom: 5% !important;
+    }
+    
+    .brayan-section button {
+        background-color: #F9A5A5;
+        color: #f2f2f2;
+        border-color: #F9A5A5; 
+        width: 35% !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        border-style: none;
+    }
+    
+    .brayan-section button:hover{
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }
 
@@ -161,7 +212,6 @@ section {
     transform: scale(1.1);
     cursor: pointer;
 }
-
   
   .glyphcon {
     position: absolute;
@@ -235,7 +285,6 @@ section {
     transition: all 1s ease;
   }
   
-  /* Checkbox circle */
   .outer {
     width: 30px;
     height: 30px;
@@ -253,7 +302,6 @@ section {
     opacity: 1;
   }
   
-  /* Checkmark & paperplane */
   .inner {
     position: relative;
     font-family: FontAwesome;
@@ -282,7 +330,6 @@ section {
     color: #252525;
   }
   
-  /* Label text. Wrapped in span to control border-bottom */
   .inlet {
     position: relative;
     top: -27px;
@@ -367,10 +414,52 @@ section {
     background: conic-gradient(from 0deg, #ffd1d1 0deg, #ffffff 15deg, #ffd1d1 30deg, #ffffff 45deg, #ffd1d1 60deg, #ffffff 75deg, #ffd1d1 90deg, #ffffff 105deg, #ffd1d1 120deg, #ffffff 135deg, #ffd1d1 150deg, #ffffff 165deg, #ffd1d1 180deg, #ffffff 195deg, #ffd1d1 210deg, #ffffff 225deg, #ffd1d1 240deg, #ffffff 255deg, #ffd1d1 270deg, #ffffff 285deg, #ffd1d1 300deg, #ffffff 315deg, #ffd1d1 330deg, #ffffff 345deg, #ffd1d1 360deg);
     background-size: cover;
     text-align: center;
+    padding-bottom: 10%;
   }
+
+.brayan-section svg {
+    display: block;
+    margin-bottom: -50px;
+    width: 100%;
+}
+
+.brayan-section h1{
+    color: #C3113E;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    margin-top: -7%;
+}
 
 .brayan-section img {
     width: 20%;
+    padding-top: 3%;
+}
+
+.brayan-section h6 {
+    color: #5a5959;
+    font-size: larger;
+    font-weight: 500;
+    padding-top: 3%;
+}
+
+.brayan-section button {
+    background-color: #F9A5A5;
+    border-radius: 50px;
+    color: #f2f2f2;
+    border-color: #F9A5A5;
+    width: 6%;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 1%;
+    padding: 0.5%;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.brayan-section button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 footer {
