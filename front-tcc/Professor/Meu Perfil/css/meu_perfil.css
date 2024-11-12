@@ -161,82 +161,27 @@ section {
     }
 }
 
-.slide-container {
-    max-width: 1120px;
+#cCarousel {
     width: 100%;
     background-color: #dddddd;
     padding: 40px 0;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
 }
 
-.slide-content{
-    margin: 0 40px;
-}
-
-.card {
+.cCarousel-item {
     border-radius: 25px;
     background-color: #f2f2f2 !important;
     width: 320px;
 }
 
-.image-content, .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content {
-    position: relative;
-    row-gap: 5px;
-    border-radius: 25px;
-}
-
-.overlay {
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   background-color: #FFD1DC;
-   border-radius: 0 0 0 25px;
-}
-
-.overlay::before, .overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #FFD1DC;
-}
-
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #f2f2f2;
-}
-
-.card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    background-color: #dddddd;
-    padding: 3px;
-    border-radius: 70px;
-}
-
-.card-image .card-img {
+.cCarousel-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 70px;
     border: 3px solid #3a3a3a;
-}
-
-.name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #252525;
 }
 
 .button {
@@ -255,6 +200,88 @@ section {
 .button:hover{
     background-color: #fba8b7;
 }
+  
+  #cCarousel .arrow {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 26px;
+    color: white;
+    background: #00000072;
+    cursor: pointer;
+  }
+  
+  #cCarousel #prev {
+    left: 0px;
+  }
+  
+  #cCarousel #next {
+    right: 0px;
+  }
+  
+  #carousel-vp {
+    width: 770px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  @media (max-width: 770px) {
+    #carousel-vp {
+      width: 510px;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    #carousel-vp {
+      width: 250px;
+    }
+  }
+  
+  #cCarousel #cCarousel-inner {
+    display: flex;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    gap: 10px;
+    left: 0px;
+  }
+  
+  .cCarousel-item img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 246px;
+    color: white;
+  }
+  
+  .cCarousel-item .infos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+  }
+  
+  .cCarousel-item .infos button {
+    background: #222;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
 
 footer {
     padding: 2rem;
