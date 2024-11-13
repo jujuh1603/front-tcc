@@ -161,125 +161,97 @@ section {
     }
 }
 
-#cCarousel {
+.cards-wrapper {
     width: 100%;
-    background-color: #dddddd;
-    padding: 40px 0;
+    height: 300px;
+    max-width: 1200px;
+    overflow-x: hidden;
     position: relative;
-    max-width: 900px;
-    margin: auto;
-}
-
-.cCarousel-item {
-    border-radius: 25px;
-    background-color: #f2f2f2 !important;
-    width: 320px;
-}
-
-.cCarousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 70px;
-    border: 3px solid #3a3a3a;
-}
-
-.button {
-    border: 2px solid #bfbfbf;
-    font-size: 16px;
-    font-weight: 500;
-    color: #252525;
-    padding: 8px 16px;
-    background-color: #FFD1DC;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button:hover{
-    background-color: #fba8b7;
-}
+  }
   
-  #cCarousel .arrow {
+  .cards {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-110px);
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 220px;
+    height: 260px;
+    border-radius: 14px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    display: inline;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #000;
+  }
+  
+  .card h2 {
+    font-size: 2.6em;
+    font-weight: 300;
+    margin-top: 1.25em;
+  }
+  
+  .card h4 {
+    text-transform: uppercase;
+  }
+  
+  .icon svg {
+    overflow: visible;
+    stroke-width: 1.25em;
+    width: 3em;
+  }
+  
+  .cards-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+  
+    pointer-events: none;
+  }
+  
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 6px 8px #00000030;
     position: absolute;
     top: 50%;
-    display: flex;
-    width: 45px;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    z-index: 1;
-    font-size: 26px;
-    color: white;
-    background: #00000072;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
     cursor: pointer;
   }
   
-  #cCarousel #prev {
-    left: 0px;
+  .arrow-btn-next {
+    left: auto;
+    right: 20px;
   }
   
-  #cCarousel #next {
-    right: 0px;
-  }
-  
-  #carousel-vp {
-    width: 770px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-  }
-  
-  @media (max-width: 770px) {
-    #carousel-vp {
-      width: 510px;
-    }
-  }
-  
-  @media (max-width: 510px) {
-    #carousel-vp {
-      width: 250px;
-    }
-  }
-  
-  #cCarousel #cCarousel-inner {
-    display: flex;
+  .arrow-btn svg {
+    fill: #333;
     position: absolute;
-    transition: 0.3s ease-in-out;
-    gap: 10px;
-    left: 0px;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
   }
   
-  .cCarousel-item img {
-    width: 100%;
-    object-fit: cover;
-    min-height: 246px;
-    color: white;
-  }
-  
-  .cCarousel-item .infos {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background: white;
-    color: black;
-  }
-  
-  .cCarousel-item .infos button {
-    background: #222;
-    padding: 10px 30px;
-    border-radius: 15px;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+  .arrow-btn-next svg {
+    transform: translate(-40%, -50%);
   }
   
 
