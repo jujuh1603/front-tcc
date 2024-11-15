@@ -23,7 +23,7 @@ arrowBtns.forEach((btn,i)=>{
     }
     else {
       currentCard++
-      currentCard = Math.min(4, currentCard)
+      currentCard = Math.min(15, currentCard)
     }
     moveCards(0.75)
   }
@@ -74,7 +74,7 @@ function moveCards(dur=0){
       autoAlpha:(currentCard==0)?0:1
     }, 0)
     .to('.arrow-btn-next', {
-      autoAlpha:(currentCard==4)?0:1
+      autoAlpha:(currentCard==15)?0:1
     }, 0)
     .to('.card h4', {
       y:(i)=>(i==currentCard)?0:8,    
