@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    background-color: #f2f2f2;
+}
+
+.menu-dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav .btn{
+    background-color: #CAE8F3;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    box-shadow: #a8a8a8 0.5rem 0.5rem 1rem;
+    background-color: #CAE8F3;
+}
+
+.navbar-brand d-flexallign-items-center {
+    text-align: center;
+}
+
+.navbar-text {
+    color: #252525;
+}
+
+form .form-control {
+    background-color: #f2f2f2;
+}
+
+form .form-control:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.input-group .btn {
+    background-color: #f2f2f2;
+}
+
+.input-group .btn:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.btn-group .btn{
+    color: #252525;
+    border-radius: 50% 50% 50% 50%; 
+    background-color: #CAE8F3; 
+    border-color: #CAE8F3;
+}
+
+.btn-group, .btn:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+section {
+    background-color: #f2f2f2;
+}
+
+.duvidas {
+    padding: 5%;
+}
+
+.duvidas h1 {
+    font-weight: 650;
+    font-size: 300%;
+    padding-bottom: 5%;
+}
+
+.duvidas h5 {
+    font-weight: 450;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+.drop {
+    padding-top: 0%;
+}
+
+.drop .col button {
+    width: 100%;
+    text-align: left;
+    background-color: #CAE8F3;
+    color: #252525;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    padding: 5%;
+    border: solid #CAE8F3;
+}
+
+.dropdown-menu {
+    width: 100%;
+    border: 2px solid #f2f2f2;
+}
+
+.dropdown-menu .dropdown-item {
+    font-family: "League Spartan", sans-serif;
+    
+    word-wrap: break-word; /* Quebra palavras longas */
+    word-break: break-word; /* Quebra linhas para palavras longas */
+    white-space: normal;    /* Evita texto contínuo em linha */
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.image img {
+    width: 80%;
+    align-self: center;
+}
+
+@media screen and (max-width: 600px){
+    .duvidas h1 {
+        padding-top: 10%;
+        font-size: 200%;
+        text-align: center;
+    }
+    .duvidas h5 {
+        padding-top: 5%;
+    }
+    .drop {
+        padding-top: 5%;
+    }
+    .image {
+        padding-bottom: 10%;
+    }
+    .image img {
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 2rem;
+    background-color: #F0CDCD;
+}
+
+footer img {
+    padding-left: 0rem;
+    padding-right: 5rem;
+}
+
+footer h6{
+    color: #7a7a7a;
+}
+
