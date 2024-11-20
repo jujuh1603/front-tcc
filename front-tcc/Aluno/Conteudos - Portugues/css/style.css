@@ -151,6 +151,41 @@ background: linear-gradient(0deg, rgba(174,198,207,1) 0%, rgba(242,242,242,1) 5%
     background-color: #f2f2f2;
 }
 
+.btn__conclusao {
+    width: 30%;
+    padding: 3%;
+    margin: 5%;
+    border-radius: 20px;
+    background-color: #AEC6CF;
+    border: 5px solid #74868d;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.progresso {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.btn__conclusao{
+    width: 30%;
+    padding: 3%;
+    margin: 5%;
+    margin-top: 0%;
+    border-radius: 20px;
+    background-color: #AEC6CF;
+    border: 5px solid #74868d;
+    font-family: "League Spartan", sans serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.btn__conclusao:hover{
+    background-color: #74868d;
+    border: 5px solid #AEC6CF;
+}
+
 footer {
     padding: 2rem;
     background-color: #F0CDCD;
@@ -171,4 +206,48 @@ footer h6{
         right: 0;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .trilha {
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+    .trilha img {
+        width: 150% !important;
+    }
+    .linha {
+        margin-left: 10%;
+    }
+    .line li span {
+        width: 1% !important;
+        height: 5% !important;
+    }
+    .btn__return{
+        border-radius: 50px;
+        background-color: #f2f2f2;
+        color: #6893EF;
+        border: none;
+        box-shadow: #a8a8a8 0.5rem 0.5rem 1rem;
+        font-size: 200%;
+        padding: 1.5%;
+        width: 16%;
+        height: auto;
+    }
+    
+    .btn__return:hover{
+        color: #252525;
+    }
+
+    .btn__conclusao {
+        font-size: medium;
+        border-radius: 10px;
+        border: 3px solid #74868d;
+        width: 70%;
+    }
+
+    .btn__conclusao:hover{
+        background-color: #74868d;
+        border: 3px solid #AEC6CF;
+    }
 }
